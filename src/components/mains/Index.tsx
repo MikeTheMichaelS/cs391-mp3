@@ -12,7 +12,7 @@ const StyledImg = styled.img`
 export default function IndexMain() {
 
     useEffect(() => {
-        document.title = "Index | Michael MP-3";
+        document.title = "Home | Michael MP-3";
     }, []);
 
     return (

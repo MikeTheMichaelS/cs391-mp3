@@ -51,11 +51,12 @@ export const StyledMainH2 = styled.h2`
 
 export const StyledMainH3 = styled.h3`
     font-size: 2vw;
+    padding-left: 1%;
 `;
 
 export const StyledMainP = styled.p`
     padding: 1%;
-    font-size: 1vw;
+    font-size: 1.5vw;
 `;
 
 export const FirstLayerList = styled.li`

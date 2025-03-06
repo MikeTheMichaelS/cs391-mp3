@@ -1,6 +1,12 @@
+import { useEffect } from "react";
 import { StyledMainWrapper, StyledMainH2, StyledMainH3, StyledMainP, FirstLayerList, SecondLayerList } from "../MyStyledComponents"
 
 export default function EmploymentMain() {
+
+    useEffect(() => {
+        document.title = "Employment | Michael MP-3";
+    }, []);
+
     return (
         <StyledMainWrapper>
             <StyledMainH2>Employment</StyledMainH2>

@@ -9,7 +9,7 @@ const StyledNavBar = styled.nav`
     flex-direction: column;
     /* padding: 10px; */
     justify-content: space-evenly;
-    // height: 100%;
+    height: 100%;
 
     @media screen and (max-width: 1000px) {
         flex:0;

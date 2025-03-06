@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { StyledMainWrapper, StyledMainH2, StyledMainH3, StyledMainP, FirstLayerList } from "../MyStyledComponents"
+import { useEffect } from "react";
 
 const StyledTable = styled.table`
     width: 100%;
@@ -31,6 +32,11 @@ const StyledTd = styled.td`
 `;
 
 export default function SkillMain() {
+
+    useEffect(() => {
+        document.title = "Skill | Michael MP-3";
+    }, []);
+
     return (
         <StyledMainWrapper>
             <StyledMainH2>Skills</StyledMainH2>

@@ -1,6 +1,7 @@
 import { StyledMainWrapper, StyledMainH2, StyledMainP } from "../MyStyledComponents"
 import selfie from "../../images/selfie.jpg"
 import styled from "styled-components";
+import { useEffect } from "react";
 
 const StyledImg = styled.img`
     width: 30%;
@@ -9,6 +10,11 @@ const StyledImg = styled.img`
 `;
 
 export default function IndexMain() {
+
+    useEffect(() => {
+        document.title = "Index | Michael MP-3";
+    }, []);
+
     return (
         <StyledMainWrapper>
             <StyledMainH2>Home</StyledMainH2>

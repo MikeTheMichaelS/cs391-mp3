@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import {
     StyledMainWrapper,
     StyledMainH2,
@@ -9,6 +10,11 @@ import {
 } from "../MyStyledComponents"
 
 export default function ExperienceMain() {
+
+    useEffect(() => {
+        document.title = "Experience | Michael MP-3";
+    }, []);
+
     return (
         <StyledMainWrapper>
             <StyledMainH2>Experience</StyledMainH2>

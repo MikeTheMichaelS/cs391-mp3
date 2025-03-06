@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { useEffect } from "react";
 
 const StyledImg = styled.img`
-    width: 30%;
+    width: 45%;
     max-width: 750px;
     margin: 0 auto;
 `;

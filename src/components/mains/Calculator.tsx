@@ -11,7 +11,7 @@ const StyledCalculator = styled.div`
     font-size: calc(10px + 2vmin);
 
     @media screen and (max-width: 1000px) {
-        padding: 10;
+        padding: 10px;
     }
 `;
 
@@ -46,7 +46,7 @@ export default function Calculator() {
 
 	function myPower(first, second){
 		var res=1;
-		for(var i = 0, i < Number(second), i++){
+		for(var i = 0; i < Number(second); i++){
 			res = res * first;
 		};
 		return res;
@@ -74,7 +74,7 @@ export default function Calculator() {
                 <StyledButton onClick={() => setResult(firstValue - secondValue)}>Subtract</StyledButton>
                 <StyledButton onClick={() => setResult(firstValue * secondValue)}>Multiply</StyledButton>
                 <StyledButton onClick={() => setResult(firstValue / secondValue)}>Divide</StyledButton>
-                <StyledButton onClick={() => setResult(myPower(Number(firstValue), Number(secondValue))}>Power</StyledButton>
+                <StyledButton onClick={() => setResult(myPower(Number(firstValue), Number(secondValue)))}>Power</StyledButton>
                 <StyledButton onClick={() => { setFirstValue(0); setSecondValue(0); setResult(0) }}>Clear</StyledButton>
             </div>
 

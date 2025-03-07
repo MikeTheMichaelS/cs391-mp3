@@ -44,6 +44,14 @@ export default function Calculator() {
     const [secondValue, setSecondValue] = useState(0);
     const [result, setResult] = useState(0);
 
+	function myPower(first, second){
+		var res=1;
+		for(var i = 0, i < Number(second), i++){
+			res = res * first;
+		};
+		return res;
+	};
+
     return (
         <StyledCalculator>
             <StyledInputFields>
@@ -66,7 +74,7 @@ export default function Calculator() {
                 <StyledButton onClick={() => setResult(firstValue - secondValue)}>Subtract</StyledButton>
                 <StyledButton onClick={() => setResult(firstValue * secondValue)}>Multiply</StyledButton>
                 <StyledButton onClick={() => setResult(firstValue / secondValue)}>Divide</StyledButton>
-                <StyledButton onClick={() => setResult(firstValue ** secondValue)}>Power</StyledButton>
+                <StyledButton onClick={() => setResult(myPower(Number(firstValue), Number(secondValue))}>Power</StyledButton>
                 <StyledButton onClick={() => { setFirstValue(0); setSecondValue(0); setResult(0) }}>Clear</StyledButton>
             </div>
 
